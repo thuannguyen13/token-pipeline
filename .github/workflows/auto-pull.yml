@@ -9,4 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: git init
-      - run: git branch -a
+      - run: git config --global init.defaultBranch main
+      - run: git checkout remotes/origin/project-a
+      - run: git merge remotes/origin/HEAD
