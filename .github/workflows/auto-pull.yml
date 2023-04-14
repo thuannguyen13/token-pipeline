@@ -26,5 +26,5 @@ jobs:
           # Branch we want to merge to another branch
           from_branch: origin/main
           # Branch we want to merge another branch on
-          to_branch: origin/project-a
+          to_branch: project-a
     
