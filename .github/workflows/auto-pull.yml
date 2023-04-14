@@ -10,5 +10,5 @@ jobs:
     steps:
       - run: git init
       - run: git config --global init.defaultBranch main
-      - run: git checkout remotes/origin/project-a
-      - run: git merge remotes/origin/HEAD
+      - run: git checkout remote project-a
+      - run: git merge remote origin HEAD
