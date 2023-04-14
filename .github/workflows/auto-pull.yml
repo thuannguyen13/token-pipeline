@@ -24,7 +24,7 @@ jobs:
           # Set to [secrets.GITHUB_TOKEN].
           token: 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
           # Branch we want to merge to another branch
-          from_branch: main
+          from_branch: origin/main
           # Branch we want to merge another branch on
-          to_branch: project-a
+          to_branch: origin/project-a
     
