@@ -12,7 +12,9 @@ jobs:
         run: git init
       
       - name: Checkout
-        run: git checkout 'project-a'
+        uses: actions/checkout@v3
+        with:
+          ref: project-a
         
       - name: Merge Branches
         # You may pin to the exact commit or the version.
