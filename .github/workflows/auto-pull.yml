@@ -1,0 +1,12 @@
+name: branch-watcher  
+run-name: ${{ github.actor }} is just pushed a commit
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: git checkout project-a
+      - run: git merge main
