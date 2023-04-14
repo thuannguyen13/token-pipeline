@@ -7,7 +7,10 @@ on:
 jobs:
   branch-watcher:
     runs-on: ubuntu-latest
-    steps:          
+    steps:
+      - name: Init
+        run: git init
+        
       - name: Merge Branches
         # You may pin to the exact commit or the version.
         # uses: devvspaces/merge-branches@c19380af9cd248c7e4e6d964f3f068841e9f603a
