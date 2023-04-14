@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Init
         run: git init
+      
+      - name: Checkout
+        run: git checkout 'project-a'
         
       - name: Merge Branches
         # You may pin to the exact commit or the version.
