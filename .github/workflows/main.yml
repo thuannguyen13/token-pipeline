@@ -1,0 +1,5 @@
+- name: Gitstart Pull
+  uses: GitStartHQ/actions@v0.0.6
+  with:
+    # URL of the Repo which you are forking
+    upstream: https://github.com/thuannguyen13/token-pipeline
