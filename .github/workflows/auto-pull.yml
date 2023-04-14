@@ -5,8 +5,8 @@ on:
     branches:
       - main
 jobs:
-  check-bats-version:
+  branch-watcher:
     runs-on: ubuntu-latest
     steps:
-      - run: git checkout project-a
-      - run: git merge main
+      - run: checkout project-a
+      - run: merge main
