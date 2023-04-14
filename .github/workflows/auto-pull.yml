@@ -7,10 +7,7 @@ on:
 jobs:
   branch-watcher:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-          
+    steps:          
       - name: Up merge
         # You may pin to the exact commit or the version.
         # uses: bambamboole/gha-upmerge@de87b212278009f9ace0ba024701890b9eb3281b
