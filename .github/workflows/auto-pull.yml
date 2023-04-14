@@ -8,5 +8,4 @@ jobs:
   branch-watcher:
     runs-on: ubuntu-latest
     steps:
-      - run: checkout project-a
-      - run: merge main
+      - run: git merge project-a
