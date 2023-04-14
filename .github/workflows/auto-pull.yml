@@ -1,0 +1,30 @@
+name: branch-watcher  
+run-name: ${{ github.actor }} is just pushed a commit
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  branch-watcher:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Init
+        run: git init
+      
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: project-a
+        
+      - name: Merge Branches
+        # You may pin to the exact commit or the version.
+        # uses: devvspaces/merge-branches@c19380af9cd248c7e4e6d964f3f068841e9f603a
+        uses: devvspaces/merge-branches@v1
+        with:
+          # Set to [secrets.GITHUB_TOKEN].
+          token: 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
+          # Branch we want to merge to another branch
+          from_branch: origin/main
+          # Branch we want to merge another branch on
+          to_branch: project-a
+    
