@@ -26,4 +26,4 @@ jobs:
           # The email to create merge commits with
           # git_committer_email: # optional
           # The access token to push to the repository
-          github_token: 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
+          # github_token: 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
