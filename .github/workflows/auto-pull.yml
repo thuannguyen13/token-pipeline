@@ -9,5 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: git init
-      - run: git checkout project-a
-      - run: git merge main
+      - run: git branch
