@@ -22,8 +22,8 @@ jobs:
           # The changes to accept, if strategy `merge` leads to merge conflicts (target, source, false)
           resolve_conflicts: target
           # The name to create merge commits with
-          # git_committer_name: # optional
+          # git_committer_name: thuannguyen13
           # The email to create merge commits with
-          # git_committer_email: # optional
+          # git_committer_email: nguyenducthuan133@gmail.com
           # The access token to push to the repository
           # github_token: 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
