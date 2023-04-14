@@ -7,10 +7,7 @@ on:
 jobs:
   branch-watcher:
     runs-on: ubuntu-latest
-    steps:
-      - name: Init
-        run: git init && git branch -a
-        
+    steps:        
       - name: Checkout
         uses: actions/checkout@v3
         with:
