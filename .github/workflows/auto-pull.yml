@@ -20,3 +20,11 @@ jobs:
           from_branch: main
           # Name of the branch to merge to
           to_branch: project-a
+          # User name for git commits
+          user_name: # optional, default is GitHub Upmerge Action
+          # User email for git commits
+          user_email: # optional, default is actions@github.com
+          # Environment variable containing the token to use for push
+          push_token: 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
+
+
