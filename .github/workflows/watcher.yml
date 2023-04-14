@@ -1,4 +1,4 @@
-name: branch-watcher  
+name: branch-a-watcher  
 run-name: ${{ github.actor }} is just pushed a commit
 on: 
   push:
