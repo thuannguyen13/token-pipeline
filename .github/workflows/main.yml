@@ -5,4 +5,3 @@
   with:
     # URL of the Repo which you are forking
     upstream: https://github.com/thuannguyen13/token-pipeline
-- name: Gitstart Pull
