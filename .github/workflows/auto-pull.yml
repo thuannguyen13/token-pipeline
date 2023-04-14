@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: git init
-      - run: git branch
+      - run: git branch -a
