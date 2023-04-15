@@ -1,5 +1,5 @@
 name: branch-a-watcher  
-run-name: ${{ github.actor }} is just started job
+run-name: ${{ github.actor }} is just started job ${{ github.run.number }}
 on: 
   push:
     branches:
