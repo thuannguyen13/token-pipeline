@@ -1,68 +1,4 @@
 {
-  "core": {
-    "color": {
-      "blue": {
-        "100": {
-          "value": "#f3e8ff",
-          "type": "color"
-        },
-        "200": {
-          "value": "#4968fc",
-          "type": "color"
-        },
-        "300": {
-          "value": "#002d70",
-          "type": "color"
-        }
-      }
-    }
-  },
-  "semantic": {
-    "bg": {
-      "primary": {
-        "value": "{color.blue.200}",
-        "type": "color"
-      }
-    },
-    "text": {
-      "primary": {
-        "value": "{color.blue.100}",
-        "type": "color"
-      }
-    }
-  },
-  "component": {
-    "button": {
-      "bg": {
-        "primary": {
-          "value": "{bg.primary}",
-          "type": "color"
-        }
-      },
-      "text": {
-        "primary": {
-          "value": "{text.primary}",
-          "type": "color"
-        }
-      }
-    }
-  },
-  "component-dark": {
-    "button": {
-      "bg": {
-        "primary": {
-          "value": "{bg.primary}",
-          "type": "color"
-        }
-      },
-      "text": {
-        "primary": {
-          "value": "{text.primary}",
-          "type": "color"
-        }
-      }
-    }
-  },
   "component-light": {
     "button": {
       "bg": {
@@ -82,10 +18,6 @@
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "core",
-      "semantic",
-      "component",
-      "component-dark",
       "component-light"
     ]
   }
