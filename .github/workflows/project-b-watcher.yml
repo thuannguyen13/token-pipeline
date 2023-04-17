@@ -1,0 +1,29 @@
+name: project-b-watcher
+run-name: ${{ github.actor }} is just started automated job
+on:
+    push:
+        branches:
+            - main
+jobs:
+    branch-watcher:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Synchronize Branch
+              # You may pin to the exact commit or the version.
+              # uses: jojomatik/sync-branch@e9d8fbc6a8865e57c63701f43c496ba90405a456
+              uses: jojomatik/sync-branch@v2.0.1
+              with:
+                  # The branch to sync from
+                  source: main
+                  # The branch to sync to
+                  target: project-b
+                  # The strategy to use, if fast-forward is not possible (merge, force, fail)
+                  strategy: merge
+                  # The changes to accept, if strategy `merge` leads to merge conflicts (target, source, false)
+                  resolve_conflicts: target
+                  # The name to create merge commits with
+                  git_committer_name: thuannguyen13
+                  # The email to create merge commits with
+                  git_committer_email: nguyenducthuan133@gmail.com
+                  # The access token to push to the repository
+                  # github_token: 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
